@@ -1,7 +1,14 @@
 import React from "react";
 import "react-multi-carousel/lib/styles.css";
 
-const Product = ({ images, category, name, price, description }) => {
+const Product = ({
+  images,
+  category,
+  name,
+  price,
+  written_addr,
+  description,
+}) => {
   let image = images[0];
   return (
     <div className="product">
@@ -10,6 +17,7 @@ const Product = ({ images, category, name, price, description }) => {
         <div className="product-category">{category}</div>
         <div className="product-name">{name}</div>
         <div className="product-price">{price}</div>
+        <div className="product-addr">{written_addr}</div>
         <div className="product-desc">{description}</div>
       </div>
     </div>

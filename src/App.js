@@ -8,7 +8,7 @@ const App = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await fetch(
-        "http://52.79.251.236/danggns?offset=0&limit=100&keyword=직구"
+        "http://52.79.251.236/danggns?offset=0&limit=500&keyword=직구"
       );
       const data = await response.json();
       setProducts(data);
@@ -29,6 +29,7 @@ const App = () => {
               category={product.crawl_category}
               name={product.name}
               price={product.price}
+              written_addr={product.seller_region_name}
               description={product.description}
             />
           );

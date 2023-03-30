@@ -76,3 +76,11 @@ code {
 .product-button:hover {
   background-color: #d00;
 }
+
+.product-addr {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 8px;
+}
