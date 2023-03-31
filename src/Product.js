@@ -21,7 +21,9 @@ const Product = ({
         <div className="product-addr">{written_addr}</div>
         <div className="product-desc">{description}</div>
         <br />
-        <div className="product-desc"> {url} </div>
+        <div className="product-desc">
+          <a href={url}> {url}</a>
+        </div>
       </div>
     </div>
   );
