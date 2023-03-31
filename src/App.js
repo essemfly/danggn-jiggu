@@ -31,6 +31,7 @@ const App = () => {
               price={product.price}
               written_addr={product.seller_region_name}
               description={product.description}
+              url={product.url}
             />
           );
         })}

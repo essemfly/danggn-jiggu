@@ -8,6 +8,7 @@ const Product = ({
   price,
   written_addr,
   description,
+  url,
 }) => {
   let image = images[0];
   return (
@@ -19,6 +20,7 @@ const Product = ({
         <div className="product-price">{price}</div>
         <div className="product-addr">{written_addr}</div>
         <div className="product-desc">{description}</div>
+        <div className="product-addr"> {url} </div>
       </div>
     </div>
   );
