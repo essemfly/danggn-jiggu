@@ -32,6 +32,8 @@ const App = () => {
               written_addr={product.seller_region_name}
               description={product.description}
               url={product.url}
+              status={product.status}
+              chat_counts={product.chat_counts}
             />
           );
         })}
