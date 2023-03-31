@@ -20,7 +20,8 @@ const Product = ({
         <div className="product-price">{price}</div>
         <div className="product-addr">{written_addr}</div>
         <div className="product-desc">{description}</div>
-        <div className="product-addr"> {url} </div>
+        <br />
+        <div className="product-desc"> {url} </div>
       </div>
     </div>
   );

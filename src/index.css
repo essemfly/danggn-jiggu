@@ -24,8 +24,8 @@ code {
 .product-image {
   flex-shrink: 0;
   margin-right: 16px;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   overflow: hidden;
   border-radius: 4px;
 }
