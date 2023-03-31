@@ -8,7 +8,7 @@ const App = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await fetch(
-        "http://52.79.251.236/danggns?offset=0&limit=500&keyword=직구"
+        "https://handover.space/danggns?offset=0&limit=500&keyword=직구"
       );
       const data = await response.json();
       setProducts(data);
