@@ -7,6 +7,7 @@ const Product = ({
   name,
   price,
   written_addr,
+  written_at,
   description,
   url,
   status,
@@ -22,7 +23,9 @@ const Product = ({
         </div>
         <div className="product-name">{name}</div>
         <div className="product-price">{price}</div>
-        <div className="product-addr">{written_addr}</div>
+        <div className="product-addr">
+          {written_addr} - {written_at}
+        </div>
         <div className="product-desc">{description}</div>
         <br />
         <div className="product-desc">
