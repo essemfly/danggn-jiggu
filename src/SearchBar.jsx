@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const SearchBar = () => {
+const SearchBar = ({ requestSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (event) => {
@@ -10,7 +10,7 @@ const SearchBar = () => {
   };
 
   const handleClick = () => {
-    console.log("searchterm", searchTerm);
+    requestSearch(0, searchTerm);
   };
 
   return (

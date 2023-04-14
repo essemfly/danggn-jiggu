@@ -5,15 +5,14 @@ import SearchBar from "./SearchBar";
 import { getFormattedDate } from "./utils";
 
 const App = () => {
-  const limit = 50;
+  const limit = 100;
   let keyword = "직구";
   let offset = 0;
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    console.log("ya?");
     fetchProducts(offset, keyword);
-  }, []);
+  }, [offset, keyword]);
 
   const fetchProducts = async (offset, keyword) => {
     const response = await fetch(
@@ -31,7 +30,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>해외직구 반품 상품들</h1>
-      <SearchBar />
+      <SearchBar requestSearch={fetchProducts} />
       <div className="product-list">
         {products.map((product) => {
           return (
